@@ -1,0 +1,12 @@
+function x_re = getRec_Exp(c_k,t,T)
+len = length(t);
+N = length(c_k);
+x_re = zeros(1,len);
+for i = 1:len
+    for j = 1:N
+        if c_k(1,j) <= 0
+        x_re(1,i)=x_re(1,i)+c_k(1,j)*exp(1i*(j-N-1)*pi*t(1,i)*2/T);
+        else
+        end
+    end
+end
